@@ -1,21 +1,20 @@
 #include<stdio.h>
-
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - a program that prints all combinations of single-digit numbers
+ * Return: always (success)
  */
 int main(void)
 {
-	int n;
+	int k;
 
-	for (n = 48; n < 58; n++)
+	for (k = '0'; k <= '9'; k++)
 	{
-		putchar(n);
-		if (n != 57)
-		{
-			putchar(',');
-			putchar('');
-		}
+	putchar(k);
+	if (k != '9')
+	{
+	putchar(',');
+	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
