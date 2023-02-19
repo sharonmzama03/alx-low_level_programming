@@ -1,21 +1,21 @@
 #include<stdio.h>
-
+#include<stdlib.h>
+#include<time.h>
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line, except q and e
- * Return: Always 0 (Success)
+ * main - a program that displays the alphabets and omitting some
+ * Return: always (success)
  */
 int main(void)
 {
-	char ch = 'a';
+	char lower, e, q;
 
-	while (ch <= 'z')
+	e = 'e';
+	q = 'q';
+
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		if (ch != 'e' && ch != 'q')
-	}
-	putchar(ch);
-	{
-		ch++;
+	if (lower != e && lower != q)
+	putchar(lower);
 	}
 	putchar('\n');
 	return (0);
